@@ -126,6 +126,10 @@ public class SashComposite extends Composite {
 		control.setParent(lastPanel);
 	}
 	
+	/**
+	 * Move the sash to this position, or closest if it conflicts with a size restriction.
+	 * @param percentage
+	 */
 	public void setSashPosition(int percentage)
 	{
 		int halfSash = (int) (sashWidth / 2.0f);
